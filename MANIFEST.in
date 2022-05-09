@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include al_fixtures *.css
+recursive-include al_fixtures *.csv
+recursive-include al_fixtures *.html
+recursive-include al_fixtures *.ico
+recursive-include al_fixtures *.js
+recursive-include al_fixtures *.json
+recursive-include al_fixtures *.md
+recursive-include al_fixtures *.png
+recursive-include al_fixtures *.py
+recursive-include al_fixtures *.svg
+recursive-include al_fixtures *.txt
+recursive-exclude al_fixtures *.pyc
