@@ -9,6 +9,9 @@ app_color = "grey"
 app_email = "contact@darcos.dz"
 app_license = "MIT"
 
+
+fixtures = ["Custom Field"]
+
 # Includes in <head>
 # ------------------
 
