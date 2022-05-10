@@ -2,7 +2,6 @@ from typing import Optional
 import frappe
 from frappe.utils import flt, get_number_format_info, in_words, cint
 
-
 def money_in_words(
 	number: str, main_currency: Optional[str] = None, fraction_currency: Optional[str] = None
 ):
