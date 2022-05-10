@@ -12,6 +12,11 @@ app_license = "MIT"
 
 fixtures = ["Custom Field", "Navbar Settings"]
 
+override_doctype_class = {
+    # "Quotation": "app.overrides.quotation.CustomQuotation",
+    "Sales Order": "al_fixtures.overrides.salesorder.CustomSalesOrder"
+}
+
 # Includes in <head>
 # ------------------
 
