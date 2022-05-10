@@ -10,7 +10,7 @@ app_email = "contact@darcos.dz"
 app_license = "MIT"
 
 
-fixtures = ["Custom Field"]
+fixtures = ["Custom Field", "Navbar Settings"]
 
 # Includes in <head>
 # ------------------
