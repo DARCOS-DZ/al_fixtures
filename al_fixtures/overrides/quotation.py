@@ -1,5 +1,7 @@
-from erpnext.selling.doctype.quotation.quotation import Quotation
-from al_fixtures.controllers.selling_controller import CustomSellingController
+# from erpnext.selling.doctype.quotation.quotation import Quotation
+# from al_fixtures.controllers.selling_controller import CustomSellingController
 
-class CustomQuotation(Quotation, CustomSellingController):
-    pass
+# You can extend Quotation DocType class here
+
+# class CustomQuotation(Quotation, CustomSellingController):
+#     pass
