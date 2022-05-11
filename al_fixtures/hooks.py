@@ -21,12 +21,6 @@ override_doctype_class = {
     "Lead": "al_fixtures.overrides.lead.CustomLead",
 }
 
-jinja = {
-    "filters": [
-        "al_fixtures.utils.format_currency",
-    ]
-}
-
 # Replace frappe function with custom function
 import frappe.utils.data
 import al_fixtures.utils.data
