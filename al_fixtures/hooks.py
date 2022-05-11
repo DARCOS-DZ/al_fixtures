@@ -17,6 +17,7 @@ override_doctype_class = {
     "Sales Order": "al_fixtures.overrides.salesorder.CustomSalesOrder",
     "Sales Invoice": "al_fixtures.overrides.salesinvoice.CustomSalesInvoice",
     "Delivery Note": "al_fixtures.overrides.deliverynote.CustomDeliveryNote",
+    "Lead": "al_fixtures.overrides.lead.CustomLead",
 }
 
 # Includes in <head>
