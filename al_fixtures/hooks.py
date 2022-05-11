@@ -14,15 +14,15 @@ fixtures = ["Custom Field"]
 app_include_js = "/assets/al_fixtures/js/custom_number_format.js"
 
 # import frappe function & custom function for customisation
-import frappe.utils.data
-import al_fixtures.utils.data
+import frappe.utils.data as _frappe.utils.data
+import al_fixtures.utils.data as _al_fixtures.utils.data
 
 # Replace frappe function with custom function
-frappe.utils.data.fmt_money = al_fixtures.utils.data.custom_fmt_money
-frappe.utils.fmt_money = al_fixtures.utils.data.custom_fmt_money
+_frappe.utils.data.fmt_money = _al_fixtures.utils.data.custom_fmt_money
+_frappe.utils.fmt_money = _al_fixtures.utils.data.custom_fmt_money
 
-frappe.utils.data.money_in_words = al_fixtures.utils.data.money_in_words
-frappe.utils.money_in_words = al_fixtures.utils.data.money_in_words
+_frappe.utils.data.money_in_words = _al_fixtures.utils.data.money_in_words
+_frappe.utils.money_in_words = _al_fixtures.utils.data.money_in_words
 
 
 # override_doctype_class = {
