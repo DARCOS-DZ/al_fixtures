@@ -14,8 +14,8 @@ fixtures = ["Custom Field"]
 app_include_js = "/assets/al_fixtures/js/custom_number_format.js"
 
 # import frappe function & custom function for customisation
-import frappe.utils.data as _frappe.utils.data
-import al_fixtures.utils.data as _al_fixtures.utils.data
+import frappe as _frappe
+import al_fixtures as _al_fixtures
 
 # Replace frappe function with custom function
 _frappe.utils.data.fmt_money = _al_fixtures.utils.data.custom_fmt_money
