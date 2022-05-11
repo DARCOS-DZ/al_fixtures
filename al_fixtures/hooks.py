@@ -14,7 +14,8 @@ fixtures = ["Custom Field", "Navbar Settings"]
 
 override_doctype_class = {
     "Quotation": "al_fixtures.overrides.quotation.CustomQuotation",
-    "Sales Order": "al_fixtures.overrides.salesorder.CustomSalesOrder"
+    "Sales Order": "al_fixtures.overrides.salesorder.CustomSalesOrder",
+    "Sales Invoice": "al_fixtures.overrides.salesinvoice.CustomSalesInvoice",
 }
 
 # Includes in <head>
