@@ -11,6 +11,7 @@ app_license = "MIT"
 
 
 fixtures = ["Custom Field", "Navbar Settings"]
+app_include_js = "/assets/al_fixtures/js/custom_number_format.js"
 
 override_doctype_class = {
     "Quotation": "al_fixtures.overrides.quotation.CustomQuotation",
@@ -20,6 +21,18 @@ override_doctype_class = {
     "Lead": "al_fixtures.overrides.lead.CustomLead",
 }
 
+jinja = {
+    "filters": [
+        "al_fixtures.utils.format_currency",
+    ]
+}
+
+# Replace frappe function with custom function
+import frappe.utils.data
+import al_fixtures.utils.data
+
+frappe.utils.data.fmt_money = al_fixtures.utils.data.custom_fmt_money
+frappe.utils.fmt_money = al_fixtures.utils.data.custom_fmt_money
 # Includes in <head>
 # ------------------
 
