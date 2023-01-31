@@ -9,8 +9,6 @@ app_color = "grey"
 app_email = "contact@darcos.dz"
 app_license = "MIT"
 
-
-fixtures = ["Custom Field"]
 app_include_js = "/assets/al_fixtures/js/custom_number_format.js"
 
 # import frappe function & custom function for customisation
